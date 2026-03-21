@@ -28,7 +28,7 @@ class Loader {
     }
 
     makeUrl(options: Record<string, string>, endpoint: string): string {
-        // Исправляем: создаем объект с индексной сигнатурой
+       
         const urlOptions: Record<string, string> = { ...this.options, ...options };
         let url = `${this.baseLink}${endpoint}?`;
         

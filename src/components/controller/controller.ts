@@ -11,7 +11,6 @@ class AppController extends AppLoader {
         );
     }
 
-    // Изменяем параметр на более общий тип Event
     getNews(e: Event, callback: Callback<NewsResponse>): void {
         let target = e.target as HTMLElement;
         const newsContainer = e.currentTarget as HTMLElement;
